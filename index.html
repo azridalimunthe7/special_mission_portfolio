@@ -312,28 +312,36 @@
             action="https://formspree.io/f/xlgwknkq"
             method="POST"
             class="contact__form"
+            id="contact-form"
           >
             <input
               type="text"
+              name="name"
               placeholder="Name"
               required
               class="contact__input"
             />
             <input
               type="mail"
+              name="email"
               placeholder="Email"
               required
               class="contact__input"
             />
             <textarea
-              name=""
+              name="message"
+              placeholder="Mesage"
               id=""
               cols="0"
               rows="10"
               class="contact__input"
+              required
             ></textarea>
-            <button type="submit" class="contact-button">Kirim</button>
+            <button type="submit" class="contact-button" id="submit-btn">
+              <span id="btn-text">Kirim</span>
+            </button>
           </form>
+          <p id="status"></p>
         </div>
       </section>
     </main>

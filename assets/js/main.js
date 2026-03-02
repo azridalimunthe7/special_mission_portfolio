@@ -62,3 +62,44 @@ sr.reveal(".home__img, .about__subtitle, .about__text, .skills__img", {
 });
 sr.reveal(".home__social-icon", { interval: 200 });
 sr.reveal(".skills__data, .contact__input", { interval: 200 });
+
+/* === Form Contact === */
+const form = document.getElementById("contact-form");
+const submitButton = document.getElementById("submit-btn");
+const btnText = document.getElementById("btn-text");
+const statusMessage = document.getElementById("status");
+
+form.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+
+  // 🔵 Aktifkan Loading
+  submitButton.classList.add("loading");
+  submitButton.disabled = true;
+  btnText.innerText = "Mengirim...";
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      statusMessage.innerHTML = "Terima kasih, pesan kamu telah terkirim!";
+      form.reset();
+    } else {
+      statusMessage.innerHTML = "Terjadi kesalahan, silahkan coba lagi!";
+    }
+  } catch (error) {
+    statusMessage.innerHTML = "Terjadi kesalahan jaringan!";
+  }
+
+  // 🔴 Matikan Loading (apapun hasilnya)
+  submitButton.classList.remove("loading");
+  submitButton.disabled = false;
+  btnText.innerText = "Kirim";
+});
