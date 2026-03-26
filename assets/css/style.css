@@ -332,6 +332,10 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.about__text {
+  text-align: left;
+}
+
 /* ===== SKILLS =====*/
 .skills__container {
   display: flex;
