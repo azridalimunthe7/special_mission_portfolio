@@ -3,79 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- =====BOX ICONS===== -->
+    <title>Portfolio Frontend Azrian Dalimunthe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <title>Portfolio Azrian Dalimunthe</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav">
-        <div>
-          <a href="#" class="nav__logo">Azrian Dalimunthe</a>
-        </div>
+    <nav>
+      <div class="nav-logo">
+        <a href="#">
+          <h3>Azrian Dalimunthe</h3>
+        </a>
+      </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Project</a>
-            </li>
-            <li class="nav__item">
-              <a href="#certificate" class="nav__link">Certificate</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <ul class="nav-links">
+        <li class="link"><a href="#">Home</a></li>
+        <li id="link1" class="link"><a href="#">About</a></li>
+        <li id="link2" class="link"><a href="#">Skills</a></li>
+        <li id="link3" class="link"><a href="#">Project</a></li>
+        <li id="link4" class="link"><a href="#">Certificate</a></li>
+      </ul>
+      <a
+        href="https://wa.me/+6281271328274"
+        class="btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Contact Me</a
+      >
+    </nav>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am
-            <span class="home__title-color">Azrian Dalimunthe</span><br />
-            Front-End Developer
-          </h1>
-
-          <p class="home-desc">
-            Saya Front-end Developer yang membangun web modern, responsif dan
-            interaktif. Mengubah desain menjadi website dengan cepat, rapi dan
-            user-friendly.
-          </p>
-
-          <a
-            href="https://wa.me/+6281271328274"
-            class="button"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="bx bxl-whatsapp"></i>WhatsApp</a
-          >
-        </div>
-
+    <header class="container">
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>BUILD A WEBSITE LIKE A PRO</h4>
+        <h1>Hi, I'm <span>Azrian</span>, Frontend Developer</h1>
+        <p>
+          Saya Frontend Developer yang membangun web modern, responsif dan
+          interaktif. Mengubah desain menjadi website dengan cepat, rapi dan
+          user-friendly.
+        </p>
         <div class="home__social">
           <a
             href="https://www.linkedin.com/in/azrian-dalimunthe"
@@ -99,289 +72,176 @@
             ><i class="bx bxl-instagram"></i
           ></a>
         </div>
+      </div>
+      <div class="image">
+        <img src="assets/img/header.png" />
+      </div>
+    </header>
 
-        <div class="home__img">
-          <div class="home-img">
-            <div class="middle-frame">
-              <div class="inner-frame">
-                <img
-                  src="assets/img/azrian-dalimunthe-semi-formal.jpeg"
-                  alt="Azrian Dalimunthe"
-                />
+    <section class="container">
+      <h2 class="header">About</h2>
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <div class="about__container">
+        <div class="about__img">
+          <img
+            src="assets/img/azriandalimunthe_v2.jpg"
+            alt="azrian dalimunthe"
+          />
+        </div>
+
+        <div class="text-container">
+          <h3 class="about__subtitle">I'am Azrian</h3>
+          <p class="about__text">
+            Saya adalah seorang Frontend Developer yang memiliki pemahaman dasar
+            atau fundamental mengenai HTML, CSS, JavaScript dan React. Saya
+            adalah pribadi yang suka belajar, jika suatu hari saya harus
+            mempelajari framework atau bahasa pemrograman yang baru, maka saya
+            akan bersemangat untuk mempelajari nya. Memiliki fundamental sebagai
+            Software Engineer menjadi modal yang berharga bagi saya untuk dapat
+            menguasai hal baru dengan baik dan cepat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="header">Skills</h2>
+      <div class="skills__container">
+        <div class="skills-left">
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p class="skills__text">
+            Sebagai seorang Frontend Developer, saya memiliki beberapa keahlian
+            sebagai berikut:
+          </p>
+          <div class="data-container">
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon-html"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon-css"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon-js"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-react skills__icon-react"></i>
+                <span class="skills__name">REACT</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container">
-          <div class="about__img">
-            <img
-              src="assets/img/azriandalimunthe_v2.jpg"
-              alt="azrian dalimunthe"
-            />
-          </div>
-
-          <div class="text-container">
-            <h2 class="about__subtitle">I'am Azrian</h2>
-            <p class="about__text">
-              Saya adalah seorang Front-end Developer yang memiliki pemahaman
-              dasar atau fundamental mengenai HTML, CSS, JavaScript dan React.
-              Saya adalah pribadi yang suka belajar, jika suatu hari saya harus
-              mempelajari framework atau bahasa pemrograman yang baru, maka saya
-              akan bersemangat untuk mempelajari nya. Memiliki fundamental
-              sebagai Software Engineer menjadi modal yang berharga bagi saya
-              untuk dapat menguasai hal baru dengan baik dan cepat.
-            </p>
-          </div>
+        <div class="picture-container">
+          <img src="assets/img/frontend.png" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills__container">
-          <div class="skills-left">
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p class="skills__text">
-              Sebagai seorang Front-end Developer, saya memiliki beberapa
-              keahlian sebagai berikut:
-            </p>
-            <div class="data-container">
-              <div class="skills__data">
-                <div class="skills__names">
-                  <i class="bx bxl-html5 skills__icon-html"></i>
-                  <span class="skills__name">HTML5</span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__names">
-                  <i class="bx bxl-css3 skills__icon-css"></i>
-                  <span class="skills__name">CSS3</span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__names">
-                  <i class="bx bxl-javascript skills__icon-js"></i>
-                  <span class="skills__name">JAVASCRIPT</span>
-                </div>
-              </div>
-              <div class="skills__data">
-                <div class="skills__names">
-                  <i class="bx bxl-react skills__icon-react"></i>
-                  <span class="skills__name">REACT</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="picture-container">
-            <img src="assets/img/boy-coding.jpg" alt="" class="skills__img" />
-          </div>
-        </div>
-      </section>
-
-      <!--===== PROJECT =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Project</h2>
-
-        <div class="work__container">
+    <section class="container">
+      <h2 class="header">Project</h2>
+      <div class="box-container">
+        <div class="card">
+          <img src="assets/img/chill-movie.png" alt="Chill Movie App" />
+          <h4>Tampilan Website Film</h4>
+          <p>Membuat Website Film</p>
           <a
             href="https://chill-movie-rho.vercel.app/"
             class="project-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="project-image">
-              <img src="assets/img/chill-movie.png" alt="Chill Movie App" />
-            </div>
+            >Lihat Project <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
 
-            <div class="project-content">
-              <h3>Tampilan Website Film</h3>
-            </div>
-
-            <div class="tech-stack">
-              <i class="bx bxl-html5 skills__icon-html"></i>
-              <i class="bx bxl-css3 skills__icon-css"></i>
-              <i class="bx bxl-javascript skills__icon-js"></i>
-            </div>
-          </a>
-
+        <div class="card">
+          <img src="assets/img/video-belajar.png" alt="Video Belajar" />
+          <h4>Website Video Belajar</h4>
+          <p>Membangun Website video belajar menggunakan React</p>
           <a
             href="https://github.com/azridalimunthe7/advancedFE2.git"
             class="project-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="project-image">
-              <img src="assets/img/video-belajar.png" alt="Video Belajar" />
-            </div>
+            >Lihat Project <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
 
-            <div class="project-content">
-              <h3>Website Video Belajar</h3>
-            </div>
-
-            <div class="tech-stack">
-              <i class="bx bxl-html5 skills__icon-html"></i>
-              <i class="bx bxl-css3 skills__icon-css"></i>
-              <i class="bx bxl-javascript skills__icon-js"></i>
-              <i class="bx bxl-react skills__icon-react"></i>
-            </div>
-          </a>
-
+        <div class="card">
+          <img src="assets/img/to-do-list.jpg" alt="Aplikasi To do List" />
+          <h4>Aplikasi To do List</h4>
+          <p>Membuat Aplikasi To do List</p>
           <a
             href="https://todolist-app-wheat.vercel.app/"
             class="project-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="project-image">
-              <img src="assets/img/to-do-list.jpg" alt="Aplikasi To do List" />
-            </div>
+            >Lihat Project <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
 
-            <div class="project-content">
-              <h3>Tampilan Aplikasi To do List</h3>
-            </div>
-
-            <div class="tech-stack">
-              <i class="bx bxl-html5 skills__icon-html"></i>
-              <i class="bx bxl-css3 skills__icon-css"></i>
-              <i class="bx bxl-javascript skills__icon-js"></i>
-            </div>
-          </a>
-
+        <div class="card">
+          <img src="assets/img/rest-api.jpg" alt="Pembuatan Rest API" />
+          <h4>Build Rest API</h4>
+          <p>Membangun Rest API menggunakan Node JS</p>
           <a
             href="https://github.com/azridalimunthe7/mission_advanced_be_a.git"
             class="project-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="project-image">
-              <img src="assets/img/rest-api.jpg" alt="Pembuatan Rest API" />
-            </div>
+            >Lihat Project <i class="ri-arrow-right-line"></i
+          ></a>
+        </div>
 
-            <div class="project-content">
-              <h3>Pembuatan Rest API</h3>
-            </div>
-
-            <div class="tech-stack">
-              <i class="bx bxl-nodejs skills__icon-node"></i>
-            </div>
-          </a>
-
+        <div class="card">
+          <img src="assets/img/weather-app.png" alt="Alikasi Perkiraan Cuaca" />
+          <h4>Aplikasi Perkiraan Cuaca</h4>
+          <p>
+            Membuat aplikasi perkiraan cuaca yang dibangun menggunakan
+            JavaScript
+          </p>
           <a
             href="https://weather-around.vercel.app/"
             class="project-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="project-image">
-              <img
-                src="assets/img/weather-app.png"
-                alt="Alikasi Perkiraan Cuaca"
-              />
-            </div>
-
-            <div class="project-content">
-              <h3>Aplikasi Perkiraan Cuaca</h3>
-            </div>
-
-            <div class="tech-stack">
-              <i class="bx bxl-html5 skills__icon-html"></i>
-              <i class="bx bxl-css3 skills__icon-css"></i>
-              <i class="bx bxl-javascript skills__icon-js"></i>
-              <i class="bx bxl-react skills__icon-react"></i>
-            </div>
-          </a>
+            >Lihat Project <i class="ri-arrow-right-line"></i
+          ></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--===== CERTIFICATE =====-->
-      <section class="certificate section" id="certificate">
-        <h2 class="section-title">Certificate</h2>
-
-        <div class="certificate-container">
+    <section class="container">
+      <h2 class="header">Certificate</h2>
+      <div class="box-container">
+        <div class="card">
+          <img src="assets/img/certificate-fsd-ss.png" />
+          <h4>FULL STACK DEVELOPER</h4>
+          <p>From harisenin Bootcamp</p>
           <a
             href="https://tinyurl.com/certificate-azrian"
-            class="certificate-card"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div class="certificate-image">
-              <img
-                src="assets/img/certificate-fsd-ss.png"
-                alt="Certificate bootcamp FSD 17"
-              />
-            </div>
-
-            <div class="certificate-content">
-              <h3>Full Stack Developer</h3>
-              <p>
-                This certificate is from the Harisenin full stack developer
-                bootcamp program.
-              </p>
-            </div>
-          </a>
+            >Lihat Certificate <i class="ri-arrow-right-line"></i
+          ></a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+    <div class="copyright">
+      Copyright © 2026 Azrian Dalimunthe. All Rights Reserved.
+    </div>
 
-        <div class="contact__container">
-          <form
-            action="https://formspree.io/f/xlgwknkq"
-            method="POST"
-            class="contact__form"
-            id="contact-form"
-          >
-            <input
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-              class="contact__input"
-            />
-            <input
-              type="mail"
-              name="email"
-              placeholder="Email"
-              required
-              class="contact__input"
-            />
-            <textarea
-              name="message"
-              placeholder="Mesage"
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-              required
-            ></textarea>
-            <button type="submit" class="contact-button" id="submit-btn">
-              <span id="btn-text">Kirim</span>
-            </button>
-          </form>
-          <p id="status"></p>
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p>© 2026 Azrian Dalimunthe | All Rights Reserved</p>
-    </footer>
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
